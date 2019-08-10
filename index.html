@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bocharova Anna</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/shards.css?v=2.1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Righteous.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <a class="navbar-brand" href="#">BOCHAROVA A</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-1" aria-controls="navbarNavDropdown-1"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown-1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#1">Welcome</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#2">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#3">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#4">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<div class="step1" id="1">
+  <img src="images/resources/1.png" style="top: -72px; left: -92px; height: 100%; position: absolute; z-index: 0;">
+  <img class="woman" src="images/resources/woman.svg" style="top: 10px; right: -150px; height: 100%; position: absolute; z-index: 0;">
+  <h1 class="f-Righteous text-primary" style="position: relative; top:calc(50% - 50pt); left: 10%; font-size: 50pt; width: fit-content; z-index: 1; line-height: 1;">ANNA<br>BOCHAROVA</h1>
+</div>
+<div class="step2" id="2">
+  <img class="ATB" src="images/resources/2.png" style="top: 0; left: 0; height: 100%; position: absolute; z-index: 0;">
+  <p class="text-light ATB-text" style="position: absolute; top: 20%; right: 10%; font-size: 26pt; width: 500px; z-index: 1;"><span style="font-size: 38pt">Hey!</span><br>I’m illustrator based in Lviv. <br>I creating flat  illustrations for movie on the YouTube channel and ironic illustrations for the soul. Like most of the illustrators today, I mainly use digital painting.</p>
+</div>
+<div class="step3" id="3">
+  <!--
+    <img src="images/photo.jpg">
+    <div>
+        <div><img src="images/photo.jpg"><img src="images/photo.jpg"></div>
+        <div><img src="images/photo.jpg"><img src="images/photo.jpg"></div>
+    </div>
+  -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-block w-100" id="c-1" style="background: url(images/1.jpg)"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100" id="c-2" style="background: url(images/2.jpg)"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100" id="c-3" style="background: url(images/3.jpg)"></div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-block w-100" id="c-4" style="background: url(images/4.jpg)"></div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+document.getElementById("c-1").onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "images/1.jpg";
+}
+document.getElementById("c-2").onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "images/2.jpg";
+}
+document.getElementById("c-3").onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "images/3.jpg";
+}
+document.getElementById("c-4").onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "images/4.jpg";
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</div>
+<div class="step4" id="4">
+  <img class="r4" src="images/resources/4.png" style="top: -72px; right: -92px; height: 100%; position: absolute; z-index: 0;">
+  <p class="f-Righteous text-light" style="position: relative; top:calc(50% - 20pt); left: 10%; font-size: 36pt; width: fit-content; z-index: 1;">Contact me <i class="fas fa-level-down-alt"></i><br><span style="font-size: 18pt;"><a class="text-light" href="mailto:annywaay99@gmail.com">annywaay99@gmail.com</a><br><a class="text-light" href="tel:+380981286196">+380981286196</a></span></p>
+</div>
+
+<footer>
+    <a href="https://www.instagram.com/annywaayy" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/anna.bocharova.1276" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.behance.net/annyway" target="_blank"><i class="fab fa-behance"></i></a>
+</footer>
+
+    <script async defer src="js/buttons.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/shards.min.js"></script>
+    <script src="js/demo.min.js"></script>
+</body>
+</html>

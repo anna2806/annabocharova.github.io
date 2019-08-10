@@ -1,0 +1,210 @@
+*, .navbar-brand, .f-Righteous{
+    outline: none!important;
+    font-family: Righteous;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: unset;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.5);
+}
+.step1, .step2, .step3, .step4{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.step1{
+    background: #fbd0a5
+}
+.step2{
+    background: var(--primary)
+}
+.step3{
+    background: #fbd0a5
+}
+.step4{
+    background: var(--primary);
+    margin-top: -6px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: var(--light);
+    text-align: center;
+    padding-top: 6.5px;
+}
+footer>a{
+    padding: 5px 25px;
+    font-size: 25pt;
+}
+/*
+.step3>img{
+    width: calc(50vw - 10px);
+    height: calc(50vw - 10px);
+}
+.step3>div{
+    display: flex;
+}
+.step3>div>div>img{
+    width: 100%;
+    height: calc(25vw - 5px);
+}
+@media only screen and (max-width: 700px){
+    .step3{
+        display: block;
+    }
+    .step3>img{
+        width: 100%;
+        height: auto;
+    }
+    .step3>div{
+        display: block;
+    }
+    .step3>div>div>img{
+        width: 100%;
+        height: auto;
+    }
+}
+*/
+.carousel{
+    height: 100vh;
+}
+.carousel-item > div{
+    height: 100vh;
+    background-size: cover!important;
+}
+@media only screen and (max-width: 700px){
+    .woman{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .ATB{
+        left:-85px!important;
+    }
+    .ATB-text{
+        top: unset!important;
+        bottom: 10%!important;
+    }
+}
+@media only screen and (max-width: 1125px){
+    .ATB{
+        left:-165px!important;
+    }
+}
+@media only screen and (max-width: 1045px){
+    .ATB{
+        left:-225px!important;
+    }
+}
+@media only screen and (max-width: 965px){
+    .ATB{
+        left:-420px!important;
+    }
+}
+@media only screen and (max-width: 765px){
+    .ATB{
+        left:-675px!important;
+    }
+    .ATB-text{
+        width: 100%!important;
+        right: 0!important;
+        padding: 10px!important;
+    }
+}
+@media only screen and (max-width: 715px){
+    .r4{
+        right: -280px!important;
+    }
+}
+@media only screen and (max-width: 505px){
+    .r4{
+        right: -390px!important;
+    }
+}
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  
